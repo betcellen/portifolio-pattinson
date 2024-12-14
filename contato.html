@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            .is-valid {
+                border-color: green !important;
+            }
+    
+            .is-invalid {
+                border-color: red !important;
+            }
+              /* Estilo do botão de voltar */
+        .btn-voltar {
+            background-color: #28a745; /* Cor de fundo verde */
+            color: white;
+            font-size: 16px;
+            padding: 12px 25px; /* Aumenta o espaço interno */
+            border: none;
+            border-radius: 0; /* Remove bordas arredondadas */
+            margin-top: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-voltar:hover {
+            background-color: #0056b3;
+        }
+        </style>
+         
+</head>
+<body>
+    <body class="bg-ligth d-flex justify-content-center align-items-center vh-100">
+        <div class="container">
+            <div class="card p-4 shadow">
+                <h1 class="text-center mb-4">Envie uma mensagem!</h1>
+                <form id="formulario" novalidate>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Usuário</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome do usuário" required />
+                        <div class="invalid-feedback">O nome do usuário deve ter pelo menos 3 letras</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="E-mail do usuário" required />
+                        <div class="invalid-feedback">Informe um e-mail válido</div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="msg" class="form-label">Mensagem</label>
+                        <input type="text" class="form-control" id="msg" placeholder="Mensagem" required />
+                        <div class="invalid-feedback">A mensagem deve ser maior que 2 letras</div>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Enviar</button>
+                </form>
+            </div>
+        </div>    
+             <!-- Botão de Voltar -->
+    <div class="text-center">
+        <a href="index.html" class="btn-voltar">Voltar</a>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
